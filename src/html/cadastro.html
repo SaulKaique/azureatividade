@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <script defer src="../js/cadastro.js"></script>
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro</h2>
+        <form method="post" action="../php/cadastro.php" id="registerForm" onsubmit="return validateForm()">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <label for="confirmPassword">Confirme a Senha:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required><br>
+
+            <input type="submit" value="Cadastrar">
+        </form>
+        <p id="message"></p>
+    </div>
+</body>
+</html>
